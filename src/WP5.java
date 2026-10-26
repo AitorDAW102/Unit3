@@ -31,8 +31,5 @@ public class WP5 {
         } else {
             System.out.println(num + " no es primo");
         }
-
-
-
     }
 }
