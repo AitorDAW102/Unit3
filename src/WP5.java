@@ -14,6 +14,8 @@ public class WP5 {
             esPrimo = true;
         } else if (num % 2 == 0) {
             esPrimo = false;
+        } else if (num==5) {
+            esPrimo=true;
         } else {
             for (int i = 3; i * i <= num; i += 2) {
                 if (num % i == 0) {
