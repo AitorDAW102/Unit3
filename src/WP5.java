@@ -7,6 +7,14 @@ public class WP5 {
         System.out.print("DIME EL NUMERO A COMPROBAR SI ES PRIMO: ");
         int num= sc.nextInt();
         sc.close();
+        if (comprobarPrimo(num)){
+            System.out.println(num+ " es primo");
+        } else{
+            System.out.println(num + " no es primo");
+        }
+
+    }
+    public static boolean comprobarPrimo(int num){
         boolean esPrimo = true;
         if (num <= 1) {
             esPrimo = true;
@@ -27,10 +35,8 @@ public class WP5 {
             }
         }
 
-        if (esPrimo) {
-            System.out.println(num + " es primo");
-        } else {
-            System.out.println(num + " no es primo");
-        }
+        return esPrimo;
     }
+
+
 }
