@@ -5,12 +5,12 @@ public class WP7 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Dime un numero primo y te digo su omirp en caso de que lo sea: ");
         int num= sc.nextInt();
-        int inverted = invertirNumero(num);
+        int invertedo = invertirNumero(num);
 
-        if (WP5.comprobarPrimo(num)==WP5.comprobarPrimo(inverted)){
-            System.out.println("Los numeros"+num+" y "+inverted+" son primos");
+        if (WP5.comprobarPrimo(num)==WP5.comprobarPrimo(invertedo)){
+            System.out.println("Los numeros"+num+" y "+invertedo+" son primos");
         } else {
-            System.out.println("Los numeros"+num+" y "+inverted+" no son primos");
+            System.out.println("Los numeros"+num+" y "+invertedo+" no son primos");
         }
     }
 
