@@ -8,7 +8,7 @@ public class WP13 {
         if (armstrong(num)){
             System.out.println(num+" es un numero de armstrong");
         } else {
-            System.out.println(num+" no es un numeor de armstrong");
+            System.out.println(num+" no es un numero de armstrong");
         }
 
     }
