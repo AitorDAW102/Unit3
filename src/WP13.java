@@ -17,7 +17,7 @@ public class WP13 {
     static boolean armstrong(int num){
         int cubo = 0;
         int resto=num;
-        for (int i = 1; i <= 3; i++){
+        while (resto>0){
             cubo = cubo + (int) Math.pow(resto % 10, 3);
             resto=resto/10;
         }
