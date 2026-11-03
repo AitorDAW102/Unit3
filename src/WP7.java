@@ -3,8 +3,18 @@ import java.util.Scanner;
 public class WP7 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Dime un numero primo y te digo su omirp en caso de que lo sea: ");
-        int num= sc.nextInt();
+        boolean entrada=true;
+        int num=1;
+        do{
+            System.out.print("Dime un numero primo y te digo su omirp en caso de que lo sea: ");
+            num= sc.nextInt();
+            if (WP5.comprobarPrimo(num)){
+                entrada=false;
+            } else {
+                System.out.println("MAL no es primo");
+            }
+        }
+        while (entrada==true);
         sc.close();
         int invertedo = invertirNumero(num);
 
