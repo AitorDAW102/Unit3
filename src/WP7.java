@@ -14,7 +14,7 @@ public class WP7 {
                 System.out.println("MAL no es primo");
             }
         }
-        while (entrada==true);
+        while (entrada);
         sc.close();
         int invertedo = invertirNumero(num);
 
