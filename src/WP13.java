@@ -17,8 +17,15 @@ public class WP13 {
     static boolean armstrong(int num){
         int cubo = 0;
         int resto=num;
-        while (resto>0){
-            cubo = cubo + (int) Math.pow(resto % 10, 3);
+        int digitos=num;
+        int nDigitos=0;
+
+        while (digitos>0) {
+            digitos=digitos/10;
+            nDigitos++;
+        }
+        for (int i=1; i <= nDigitos; i++){
+            cubo = cubo + (int) Math.pow(resto % 10, nDigitos);
             resto=resto/10;
         }
         return cubo == num;
