@@ -1,8 +1,15 @@
+import java.util.Scanner;
+
 public class WP12 {
     public static void main(String[] args) {
-        for (int x=1; x<=5;x++){
-            for (int y=1; y<=5;y++){
-                if (y==5-x+1){
+        Scanner sc= new Scanner(System.in);
+        System.out.print("De cuanto vas a querer la matriz: ");
+        int tamaño = sc.nextInt();
+        sc.close();
+
+        for (int x=1; x<=tamaño;x++){
+            for (int y=1; y<=tamaño;y++){
+                if (y==tamaño-x+1){
                     System.out.print(x);
                 }else {
                     System.out.print(".");

@@ -5,6 +5,7 @@ public class WP7 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Dime un numero primo y te digo su omirp en caso de que lo sea: ");
         int num= sc.nextInt();
+        sc.close();
         int invertedo = invertirNumero(num);
 
         if (WP5.comprobarPrimo(num)==WP5.comprobarPrimo(invertedo)){

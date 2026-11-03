@@ -5,6 +5,7 @@ public class WP13 {
         Scanner sc = new Scanner(System.in);
         System.out.print("De que numero vas a querer saber si es Armstrong o no: ");
         int num = sc.nextInt();
+        sc.close();
         if (armstrong(num)){
             System.out.println(num+" es un numero de armstrong");
         } else {
