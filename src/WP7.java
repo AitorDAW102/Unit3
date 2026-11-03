@@ -10,7 +10,7 @@ public class WP7 {
         if (WP5.comprobarPrimo(num)==WP5.comprobarPrimo(invertedo)){
             System.out.println("Los numeros"+num+" y "+invertedo+" son primos");
         } else {
-            System.out.println("Los numeros"+num+" y "+invertedo+" no son primos");
+            System.out.println("Los numeros "+num+" y "+invertedo+" no son primos");
         }
     }
 
