@@ -16,7 +16,6 @@ public class WP16 {
             }
         } while (esPar);
         sc.close();
-
         int mitad= (int) (((double) num /2)+0.5);
         for (int x = 1; x <= num ; x++){
             if (x<mitad){
@@ -34,11 +33,11 @@ public class WP16 {
                     System.out.print("@");
                 }
             } else {
-                for (int k = 1; k <= (2*x-1); k++){
+                for (int k = 1; k <= num; k++){
                     System.out.print("@");
                 }
             }
-            System.out.println();
+            System.out.println(" ");
 
         }
     }
