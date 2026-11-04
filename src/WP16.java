@@ -6,7 +6,7 @@ public class WP16 {
         boolean esPar=true;
         int num=1;
         do {
-            System.out.print("De cuantos pisos quieres el rombo: ");
+            System.out.print("De cuantos pisos quieres que sea el rombo: ");
             num = sc.nextInt();
 
             if (num%2==1){
