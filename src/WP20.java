@@ -12,18 +12,23 @@ public class WP20 {
             adivinando.append("_");
         }
 
-        char letra;
-        int posicion;
+        String letra;
 
         while (!descubierto){
             System.out.println(adivinando);
             System.out.print("Dime una letra de la palabra: ");
-            letra = sc.nextLine();
+            letra = sc.nextLine().toUpperCase();
 
-            posicion=adivinando.in
-            if (posicion!=-1){
-                adivinando.setCharAt(posicion, letra);
+            char c= letra.charAt(0);
+            for (int i = 0; i < adivinando.length(); i++) {
+                if (palabra.charAt(i) == c) {
+                    adivinando.setCharAt(i, c);
+                }
+            }
+            if (adivinando.indexOf("_")==-1){
+                descubierto = true;
             }
         }
+        System.out.println("HAS GANADO TU PALABRA ES: " + adivinando);
     }
 }
