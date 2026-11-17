@@ -7,9 +7,10 @@ public class WP21 {
         StringBuilder sb = new StringBuilder();
         while (st.hasMoreTokens()){
             String token = st.nextToken();
-            if (token.indexOf(Integer.parseInt("p"),0)){
-
+            if (token.charAt(0)=='p'){
+                sb.append(token+" ");
             }
         }
+        System.out.println(sb);
     }
 }
