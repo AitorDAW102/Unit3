@@ -27,6 +27,7 @@ public class comprobarWebSegura {
                     System.out.println("Comprobando conexion: OK");
                 } else {
                     System.out.println("Comprobando conexion: ERROR");
+                    return;
                 }
             } else if (st2.countTokens()==0) {
                 if (token.equals("es")){
@@ -48,6 +49,5 @@ public class comprobarWebSegura {
             }
             contador++;
         }
-
     }
 }
