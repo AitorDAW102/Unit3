@@ -6,7 +6,7 @@ public class listaNumeros {
         int num=0;
         int sum=0;
         int impar=0;
-        int contador=0;
+        int contador=-1;
         double media=0;
         do{
             System.out.print("Dame numero: ");
