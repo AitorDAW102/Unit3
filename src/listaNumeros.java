@@ -6,7 +6,7 @@ public class listaNumeros {
         int num=0;
         int sum=0;
         int impar=0;
-        int contador=-1;
+        int contador=0;
         double media=0;
         do{
             System.out.print("Dame numero: ");
@@ -17,7 +17,9 @@ public class listaNumeros {
                     impar=num;
                 }
             }
-            contador++;
+            if (num!=0){
+                contador++;
+            }
         }while (num!=0);
         sc.close();
         media= (double) sum /contador;
