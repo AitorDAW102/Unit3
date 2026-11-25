@@ -5,6 +5,7 @@ public class listaNumeros {
         Scanner sc =new Scanner(System.in);
         int num=0;
         int sum=0;
+        int sumPar=0;
         int impar=0;
         int contador=0;
         double media=0;
@@ -16,6 +17,8 @@ public class listaNumeros {
                 if(num>impar){
                     impar=num;
                 }
+            }else {
+                sumPar=sumPar+num;
             }
             if (num!=0){
                 contador++;
@@ -24,6 +27,7 @@ public class listaNumeros {
         sc.close();
         media= (double) sum /contador;
         System.out.println("Suma: "+sum);
+        System.out.println("Suma par: "+sumPar);
         System.out.println("Media: "+media);
         System.out.println("Mayor impar: "+impar);
         System.out.println("Numero de numeros: "+contador);
