@@ -13,8 +13,8 @@ public class listaNumeros {
             System.out.print("Dame numero: ");
             num= sc.nextInt();
             sum=sum+num;
-            if (num%2==1){
-                if(num>impar){
+            if (num%2!=0){
+                if(impar==0||num>impar){
                     impar=num;
                 }
             }else {
@@ -29,7 +29,11 @@ public class listaNumeros {
         System.out.println("Suma: "+sum);
         System.out.println("Suma par: "+sumPar);
         System.out.println("Media: "+media);
-        System.out.println("Mayor impar: "+impar);
+        if (impar==1){
+            System.out.println("Mayor impar: "+impar);
+        } else{
+            System.out.println("No ha habido impares");
+        }
         System.out.println("Numero de numeros: "+contador);
     }
 }
